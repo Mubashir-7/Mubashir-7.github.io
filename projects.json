@@ -1,0 +1,208 @@
+{
+  "project_portfolio": {
+    "owner": "Mubashir Ajaz",
+    "title": "AI Engineer & Data Scientist",
+    "projects": {
+      "llm_and_agentic_ai": [
+        {
+          "name": "CAGPT",
+          "subtitle": "Financial Audit & Compliance LLM",
+          "role": "Senior AI Engineer",
+          "description": "Enterprise grade LLM system designed to streamline auditing, accounting, and compliance workflows.",
+          "tech_stack": [
+            "GPT-4",
+            "Gemini",
+            "RAG",
+            "Python"
+          ],
+          "key_contributions": [
+            "Designed and implemented RAG pipelines for querying financial databases.",
+            "Automated compliance verification against IFRS and GAAP standards.",
+            "Engineered automated generation of structured enterprise audit reports."
+          ]
+        },
+        {
+          "name": "Echo AI",
+          "subtitle": "Voice AI Agent",
+          "role": "Senior AI Engineer",
+          "description": "High performance, low latency voice based conversational AI agents for real time human like interaction.",
+          "tech_stack": [
+            "GPT-4o Mini",
+            "Voyage AI (Embeddings)",
+            "Sonex (STT)",
+            "ElevenLabs (TTS)"
+          ],
+          "key_contributions": [
+            "Implemented reasoning and dialogue management logic using GPT-4o Mini.",
+            "Integrated semantic retrieval systems using Voyage AI embeddings.",
+            "Developed end to end real time STT/TTS pipelines with minimal latency."
+          ]
+        }
+      ],
+      "healthcare_and_predictive_ai": [
+        {
+          "name": "VibranEat",
+          "subtitle": "AI Powered Personalized Diet Planner",
+          "role": "AI Engineer / Researcher",
+          "description": "Ensemble learning system providing personalized nutrition based on health profiles.",
+          "tech_stack": [
+            "SVM",
+            "Random Forest",
+            "XGBoost",
+            "Logistic Regression",
+            "LSTM",
+            "DNN"
+          ],
+          "metrics": {
+            "allergy_prediction_accuracy": "99.26%",
+            "obesity_prediction_accuracy": "97.74%",
+            "diabetes_classification_accuracy": "95.00%"
+          },
+          "key_contributions": [
+            "Integrated multi model outputs for 7 day meal plans filtered by BMI and allergens.",
+            "Authored research paper comparing ensemble architectures vs. deep learning models."
+          ]
+        },
+        {
+          "name": "HealthGuard AI",
+          "subtitle": "Early Disease Detection Portal",
+          "role": "Lead Developer",
+          "description": "Intelligent healthcare portal predicting critical diseases at early stages.",
+          "tech_stack": [
+            "SVM",
+            "Logistic Regression",
+            "Meta Classifier"
+          ],
+          "metrics": {
+            "overall_system_accuracy": "98%",
+            "individual_model_accuracy": ">90% (Parkinson's, Heart Disease, Alzheimer's, etc.)"
+          },
+          "key_contributions": [
+            "Designed a Meta Classifier architecture to route symptoms to specialized models.",
+            "Focused on interpretability and high precision diagnostics."
+          ]
+        },
+        {
+          "name": "Healytic AI",
+          "subtitle": "Predictive Health & Wellness Orchestrator",
+          "role": "AI Engineer",
+          "description": "An end to end healthcare assistant that leverages NLP and Random Forest classifiers to predict diseases from symptom descriptions.",
+          "tech_stack": [
+            "Python",
+            "Scikit-learn",
+            "NLTK/spaCy",
+            "Pandas",
+            "Streamlit/Flask"
+          ],
+          "key_contributions": [
+            "Utilized Natural Language Processing (NLP) and Random Forest classifiers to predict diseases from symptom descriptions.",
+            "Generated holistic recovery plans including OTC medication suggestions, specialized diet plans, and medical-safe workout routines."
+          ]
+        }
+      ],
+      "nlp_and_data_science": [
+        {
+          "name": "Senticore",
+          "subtitle": "Sentiment Analysis with LSTM",
+          "tech_stack": [
+            "Python",
+            "LSTM",
+            "Tokenization",
+            "Word Embeddings"
+          ],
+          "key_contributions": [
+            "Trained LSTM models for sentiment classification with high temporal awareness.",
+            "Optimized for real time social media and customer feedback loops."
+          ]
+        },
+        {
+          "name": "DigitGen DCGAN",
+          "subtitle": "Synthetic Handwritten Digit Generator",
+          "tech_stack": [
+            "Python",
+            "PyTorch/TensorFlow",
+            "Computer Vision",
+            "GANs"
+          ],
+          "key_contributions": [
+            "Trained a Deep Convolutional Generative Adversarial Network (DCGAN) on the MNIST dataset.",
+            "Demonstrated adversarial machine learning, competing generator and discriminator to produce high-fidelity synthetic images."
+          ]
+        },
+        {
+          "name": "MaskSentinel AI",
+          "subtitle": "Real Time Face Mask Detection System",
+          "tech_stack": [
+            "Python",
+            "OpenCV",
+            "TensorFlow/Keras",
+            "MobileNetV2"
+          ],
+          "key_contributions": [
+            "Leveraged Convolutional Neural Networks (CNN) to identify mask compliance in real-time.",
+            "Processed live video streams with high accuracy for integration into public safety and healthcare surveillance systems."
+          ]
+        },
+        {
+          "name": "Churn Guard",
+          "subtitle": "Customer Churn Prediction",
+          "tech_stack": [
+            "Machine Learning",
+            "Feature Engineering",
+            "Data Pipelines"
+          ],
+          "key_contributions": [
+            "Conducted extensive feature engineering on user behavior patterns.",
+            "Applied classification algorithms to provide actionable business insights."
+          ]
+        }
+      ],
+      "engineering_and_simulations": [
+        {
+          "name": "COVax",
+          "description": "Vaccine & Logistics Management System. A robust C++ administrative console designed to manage large-scale vaccination programs with multi-center stock tracking, secure encrypted login with captcha, and file-based persistence for patient records.",
+          "category": "C++ / Systems Programming",
+          "types": [
+            "C++",
+            "File I/O",
+            "Data Structures"
+          ]
+        },
+        {
+          "name": "AI Self Driving Car",
+          "description": "Navigates simulated environments using reinforcement learning.",
+          "category": "Reinforcement Learning"
+        },
+        {
+          "name": "Movie Recommendation System",
+          "description": "Uses Cosine Similarity and NLP for personalized suggestions.",
+          "category": "NLP / Recommendation Engines"
+        },
+        {
+          "name": "Epidemic Spread Simulation",
+          "description": "Analyzes time and space complexity of disease spread in Python.",
+          "category": "Simulation"
+        },
+        {
+          "name": "Linux Kernel Development",
+          "description": "Solved the 'Chain Smoker Problem'; optimized kernel synchronization.",
+          "category": "Systems Programming"
+        },
+        {
+          "name": "Management Systems",
+          "types": [
+            "Stock Market Predictor (C++)",
+            "Hospital Management",
+            "Hotel Management (PHP/JS)"
+          ],
+          "category": "Full Stack / Software Engineering"
+        },
+        {
+          "name": "Network Engineering Tool",
+          "description": "VOIP and Network Monitoring for retail store chains.",
+          "category": "Networking"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "personal_information": {
+    "name": "Mubashir Ajaz",
+    "headline": "Al Engineer | LLMs, Agentic Al, Al Systems Architecture | Full-Stack Delivery & Project Leadership",
+    "location": "Karachi Division, Sindh, Pakistan",
+    "contact": {
+      "mobile": "03218232174",
+      "email": "mubashirajaz14@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/mubashir-ajaz",
+      "github": "https://github.com/Mubashir-7"
+    }
+  },
+  "summary": "I'm an Al Engineer and Technical Founder with 3 to 4 years of hands on experience building production grade Al solutions, leading projects end to end, and advising clients on how to apply Al effectively. My work focuses on Al systems, not isolated models, designing architectures where LLMs, machine learning, automation, and software engineering work together to deliver measurable outcomes.",
+  "core_expertise": [
+    "Large Language Models (LLMs): prompting, fine tuning, RAG pipelines",
+    "Agentic Al systems: tools, APIs, decision making, and automation",
+    "Machine Learning & Deep Learning: training, evaluation, optimization",
+    "Full Stack Engineering: deploying Al into real world products",
+    "Project & Delivery Leadership: translating business goals into execution"
+  ],
+  "experience": [
+    {
+      "company": "CodeNest Technologies",
+      "role": "Senior AI Engineer",
+      "location": "Pearland, TX, USA (Remote)",
+      "duration": "Aug 2025 to Present",
+      "responsibilities": [
+        "Member of the core AI team responsible for designing, building, and productionizing LLM-based features and agentic AI capabilities.",
+        "Led end-to-end AI feature delivery from requirements analysis to deployment and monitoring.",
+        "Advised clients on AI feasibility, system architecture, model selection, and scalability.",
+        "Integrated LLM solutions into secure, production-ready platforms.",
+        "Ensured model robustness, performance monitoring, and responsible AI deployment."
+      ]
+    },
+    {
+      "company": "Sizvis Media",
+      "role": "AI Project Manager",
+      "location": "Karachi, Pakistan (Hybrid)",
+      "duration": "Aug 2023 to Dec 2025",
+      "responsibilities": [
+        "Managed multiple AI and software projects end-to-end, from client onboarding to production.",
+        "Served as the primary liaison between international clients and cross functional technical teams.",
+        "Led sprint planning, task prioritization, milestone tracking, and release coordination.",
+        "Developed ML/DL models for healthcare, finance, and automation solutions.",
+        "Supported data preprocessing, model training, evaluation, and deployment.",
+        "Integrated client feedback to drive product improvements and ensured agile delivery."
+      ]
+    },
+    {
+      "company": "FAST-NUCES",
+      "role": "Teaching Assistant (TA)",
+      "location": "Karachi, Pakistan",
+      "duration": "Sep 2023 to 2025",
+      "responsibilities": [
+        "Assisted in the Operating Systems course, supporting students and managing academic evaluations."
+      ]
+    },
+    {
+      "company": "Self-Employed",
+      "role": "Freelance SEO & Technical Support",
+      "location": "Remote",
+      "duration": "Sep 2023 to Dec 2023",
+      "responsibilities": [
+        "Provided SEO services and technical implementation support for service based software solutions.",
+        "Proven track record of delivering results and achieving client objectives in a freelance capacity."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "FAST-NUCES University, Pakistan",
+      "degree": "Bachelor of Science in Computer Science",
+      "duration": "Aug 2021 to June 2025",
+      "coursework": "Programming Fundamentals (PF), Object Oriented Programming (OOP), Data Structures and Algorithms (DSA), Database Systems, Numerical Computing, Probability and Statistics, Linear Algebra, Operating Systems."
+    },
+    {
+      "institution": "Highbrow College",
+      "degree": "A-Levels",
+      "duration": "Sep 2019 to June 2021"
+    },
+    {
+      "institution": "Generation’s School",
+      "degree": "O-Levels",
+      "duration": "Sep 2017 to June 2019"
+    }
+  ],
+  "skills": {
+    "top_skills": [
+      "Computer Networking",
+      "DATA VISUALIZATION TOOLS",
+      "Software Development"
+    ]
+  },
+  "certifications": [
+    "Walmart USA • Advanced Software Engineering",
+    "Quantium • Data Analytics",
+    "Deloitte Australia • Data Analytics"
+  ],
+  "currently_open_to": [
+    "Al consulting engagements",
+    "Product partnerships",
+    "Senior Al engineering roles"
+  ]
+}
