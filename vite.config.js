@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: '/Mubashir-7.github.io/',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
