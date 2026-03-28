@@ -1,0 +1,195 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   index.css  –  Global styles for Mubashir Portfolio
+   Stack: React 18 + Tailwind CSS 3
+   ─────────────────────────────────────────────────────────────────────────── */
+
+/* 1. Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── 2. CSS Custom Properties (Design Tokens) ──────────────────────────────
+   These mirror tailwind.config.js so you can also use var() in custom CSS.   */
+:root {
+  /* Color Palette */
+  --color-primary:      #000000;
+  --color-secondary:    #FFFFFF;
+  --color-background:   #000000;
+  --color-surface:      #000000;
+  --color-accent:       #FFFFFF;
+  --color-accent-light: #FFFFFF;
+  --color-muted:        #FFFFFF;
+  --color-light:        #FFFFFF;
+
+  /* Typography */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Layout */
+  --max-content: 1120px;
+  --navbar-height: 4rem;          /* 64 px */
+}
+
+/* ─── 3. Base Reset & Defaults ───────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor links so they don't hide under the fixed navbar */
+    scroll-padding-top: var(--navbar-height);
+    background-color: #000000;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-light);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100vh;
+    background-color: #000000;
+  }
+
+  /* Accessibility – visible focus outline for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Remove default list styles */
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  /* Images always responsive */
+  img,
+  video {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Smooth anchor transitions */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Heading scale */
+  h1 { @apply text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[0.98]; }
+  h2 { @apply text-3xl md:text-5xl font-bold tracking-tight leading-tight; }
+  h3 { @apply text-xl md:text-2xl font-semibold leading-snug; }
+  h4 { @apply text-lg font-semibold; }
+
+  /* Code snippets */
+  code, kbd, pre {
+    font-family: var(--font-mono);
+  }
+}
+
+/* ─── 4. Reusable Component Classes ─────────────────────────────────────── */
+@layer components {
+
+  /* ── Layout helpers ── */
+  .content-wrapper {
+    @apply w-full max-w-content mx-auto px-6 sm:px-10 lg:px-12;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  /* ── Buttons ── */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2
+           px-6 py-3 rounded-lg font-semibold text-sm
+           transition-all duration-200 cursor-pointer select-none
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-accent focus-visible:ring-offset-2
+           focus-visible:ring-offset-background;
+  }
+
+  .btn-primary {
+      @apply btn bg-accent text-black
+           hover:bg-white active:scale-95
+           shadow-lg shadow-accent/25;
+  }
+
+  .btn-outline {
+      @apply btn border border-accent text-accent
+        hover:bg-accent hover:text-black active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply btn text-muted hover:text-light hover:bg-secondary/60;
+  }
+
+  /* ── Cards ── */
+  .card {
+    @apply bg-black rounded-2xl border border-white
+           shadow-xl shadow-black/30
+           transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  /* ── Section Heading ── */
+  .section-label {
+    @apply font-mono text-sm text-accent tracking-widest uppercase mb-3;
+  }
+
+  .section-title {
+    @apply text-light mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-muted text-lg md:text-xl max-w-2xl leading-relaxed;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    @apply w-12 h-1 bg-accent rounded-full mb-6;
+  }
+
+  /* ── Nav link ── */
+  .nav-link {
+    @apply relative text-muted text-sm font-medium
+           transition-colors duration-200 hover:text-light
+           after:absolute after:left-0 after:-bottom-1 after:h-px
+           after:w-0 after:bg-accent after:transition-all after:duration-300
+           hover:after:w-full;
+  }
+
+  .nav-link-active {
+    @apply text-light after:w-full;
+  }
+}
+
+/* ─── 5. Utility Extras ─────────────────────────────────────────────────── */
+@layer utilities {
+  /* Gradient text utility */
+  .text-gradient {
+    @apply text-white;
+  }
+
+  /* Noise texture overlay (optional decorative use) */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* Scrollbar styling (Webkit) */
+  .custom-scrollbar::-webkit-scrollbar        { width: 6px; }
+  .custom-scrollbar::-webkit-scrollbar-track  { background: var(--color-primary); }
+  .custom-scrollbar::-webkit-scrollbar-thumb  { background: var(--color-accent); border-radius: 3px; }
+}
