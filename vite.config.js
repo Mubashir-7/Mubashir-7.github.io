@@ -4,6 +4,10 @@ import path from 'path'
 
 export default defineConfig({
   base: '/Mubashir-7.github.io/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
   plugins: [react()],
   resolve: {
     alias: {
